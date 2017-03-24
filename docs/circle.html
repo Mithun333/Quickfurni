@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="can" width="300" height="300"></canvas>
+		<script>
+			var canvas = document.getElementById('can');
+			var context = canvas.getContext('2d');
+			var centerx = canvas.width/2;
+			var centery = canvas.height/2;
+			var radius = 70;
+
+			context.beginPath();
+			context.arc(100,100,100,0,2*Math.PI*radius*radius);
+			context.fillStyle='green';
+			context.fill();
+			context.lineWidth=5;
+			context.strokeStyle="#003300";
+			context.stroke();
+		</script>
+</body>
+</html>
